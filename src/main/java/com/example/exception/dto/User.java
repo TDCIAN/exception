@@ -2,6 +2,7 @@ package com.example.exception.dto;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class User {
@@ -11,6 +12,7 @@ public class User {
     private String name;
 
     @Min(1)
+    @NotNull
     private int age;
 
     public String getName() {
